@@ -15,6 +15,12 @@
 		151997F21BF94D2000D7A5AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151997F01BF94D2000D7A5AD /* LaunchScreen.storyboard */; };
 		151997FD1BF94D2000D7A5AD /* SwiftyMultipleStoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151997FC1BF94D2000D7A5AD /* SwiftyMultipleStoryboardsTests.swift */; };
 		151998081BF94D2100D7A5AD /* SwiftyMultipleStoryboardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151998071BF94D2100D7A5AD /* SwiftyMultipleStoryboardsUITests.swift */; };
+		1519981E1BF94D3D00D7A5AD /* CaneQuota.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151998151BF94D3D00D7A5AD /* CaneQuota.storyboard */; };
+		1519981F1BF94D3D00D7A5AD /* CaneQuotaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151998161BF94D3D00D7A5AD /* CaneQuotaTableViewController.swift */; };
+		151998201BF94D3D00D7A5AD /* CaneSurvey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151998181BF94D3D00D7A5AD /* CaneSurvey.storyboard */; };
+		151998211BF94D3D00D7A5AD /* CaneSurveyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151998191BF94D3D00D7A5AD /* CaneSurveyTableViewController.swift */; };
+		151998221BF94D3D00D7A5AD /* CaneQuality.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1519981B1BF94D3D00D7A5AD /* CaneQuality.storyboard */; };
+		151998231BF94D3D00D7A5AD /* CaneQualityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519981C1BF94D3D00D7A5AD /* CaneQualityTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		151998031BF94D2000D7A5AD /* SwiftyMultipleStoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyMultipleStoryboardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		151998071BF94D2100D7A5AD /* SwiftyMultipleStoryboardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMultipleStoryboardsUITests.swift; sourceTree = "<group>"; };
 		151998091BF94D2100D7A5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151998151BF94D3D00D7A5AD /* CaneQuota.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaneQuota.storyboard; sourceTree = "<group>"; };
+		151998161BF94D3D00D7A5AD /* CaneQuotaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaneQuotaTableViewController.swift; sourceTree = "<group>"; };
+		151998181BF94D3D00D7A5AD /* CaneSurvey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaneSurvey.storyboard; sourceTree = "<group>"; };
+		151998191BF94D3D00D7A5AD /* CaneSurveyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaneSurveyTableViewController.swift; sourceTree = "<group>"; };
+		1519981B1BF94D3D00D7A5AD /* CaneQuality.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaneQuality.storyboard; sourceTree = "<group>"; };
+		1519981C1BF94D3D00D7A5AD /* CaneQualityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaneQualityTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		151997E31BF94D2000D7A5AD /* SwiftyMultipleStoryboards */ = {
 			isa = PBXGroup;
 			children = (
+				151998171BF94D3D00D7A5AD /* CaneQuota */,
+				1519981A1BF94D3D00D7A5AD /* CaneSurvey */,
+				1519981D1BF94D3D00D7A5AD /* CaneQuality */,
 				151997E41BF94D2000D7A5AD /* AppDelegate.swift */,
 				151997E61BF94D2000D7A5AD /* ViewController.swift */,
 				151997E81BF94D2000D7A5AD /* Main.storyboard */,
@@ -126,6 +141,36 @@
 				151998091BF94D2100D7A5AD /* Info.plist */,
 			);
 			path = SwiftyMultipleStoryboardsUITests;
+			sourceTree = "<group>";
+		};
+		151998171BF94D3D00D7A5AD /* CaneQuota */ = {
+			isa = PBXGroup;
+			children = (
+				151998151BF94D3D00D7A5AD /* CaneQuota.storyboard */,
+				151998161BF94D3D00D7A5AD /* CaneQuotaTableViewController.swift */,
+			);
+			name = CaneQuota;
+			path = ../../../Sugam_AlmaPlantation/Alma_PushNotifications/apnagent/apnagent;
+			sourceTree = "<group>";
+		};
+		1519981A1BF94D3D00D7A5AD /* CaneSurvey */ = {
+			isa = PBXGroup;
+			children = (
+				151998181BF94D3D00D7A5AD /* CaneSurvey.storyboard */,
+				151998191BF94D3D00D7A5AD /* CaneSurveyTableViewController.swift */,
+			);
+			name = CaneSurvey;
+			path = ../../../Sugam_AlmaPlantation/Alma_PushNotifications/apnagent/apnagent;
+			sourceTree = "<group>";
+		};
+		1519981D1BF94D3D00D7A5AD /* CaneQuality */ = {
+			isa = PBXGroup;
+			children = (
+				1519981B1BF94D3D00D7A5AD /* CaneQuality.storyboard */,
+				1519981C1BF94D3D00D7A5AD /* CaneQualityTableViewController.swift */,
+			);
+			name = CaneQuality;
+			path = ../../../Sugam_AlmaPlantation/Alma_PushNotifications/apnagent/apnagent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +277,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1519981E1BF94D3D00D7A5AD /* CaneQuota.storyboard in Resources */,
+				151998201BF94D3D00D7A5AD /* CaneSurvey.storyboard in Resources */,
 				151997F21BF94D2000D7A5AD /* LaunchScreen.storyboard in Resources */,
 				151997EF1BF94D2000D7A5AD /* Assets.xcassets in Resources */,
 				151997EA1BF94D2000D7A5AD /* Main.storyboard in Resources */,
+				151998221BF94D3D00D7A5AD /* CaneQuality.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				151997E71BF94D2000D7A5AD /* ViewController.swift in Sources */,
+				151998211BF94D3D00D7A5AD /* CaneSurveyTableViewController.swift in Sources */,
+				1519981F1BF94D3D00D7A5AD /* CaneQuotaTableViewController.swift in Sources */,
 				151997ED1BF94D2000D7A5AD /* SwiftyMultipleStoryboards.xcdatamodeld in Sources */,
+				151998231BF94D3D00D7A5AD /* CaneQualityTableViewController.swift in Sources */,
 				151997E51BF94D2000D7A5AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
