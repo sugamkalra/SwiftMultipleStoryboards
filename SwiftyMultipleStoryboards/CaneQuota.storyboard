@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Cane Quota-->
+        <scene sceneID="7xs-4B-iXx">
+            <objects>
+                <tableViewController id="5HZ-HY-sID" userLabel="Cane Quota" customClass="CaneQuotaTableViewController" customModule="apnagent" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Be3-gb-rLd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="msL-sE-6gX" userLabel="backHeader">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DS-93-F8K" userLabel="BackButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <animations/>
+                                    <state key="normal" title="Back To Dashboard">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnBackToDashboardPresed:" destination="5HZ-HY-sID" eventType="touchUpInside" id="8yC-fP-P6J"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="3DS-93-F8K" secondAttribute="trailing" id="4xs-de-CX7"/>
+                                <constraint firstAttribute="bottom" secondItem="3DS-93-F8K" secondAttribute="bottom" id="8Ae-ht-0ge"/>
+                                <constraint firstItem="3DS-93-F8K" firstAttribute="top" secondItem="msL-sE-6gX" secondAttribute="top" id="FdV-ts-u8w"/>
+                                <constraint firstItem="3DS-93-F8K" firstAttribute="leading" secondItem="msL-sE-6gX" secondAttribute="leading" id="f1C-Yg-lqE"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="OGz-sv-07V">
+                                <rect key="frame" x="0.0" y="130" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OGz-sv-07V" id="ly9-LO-6yZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeline item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OC-Rp-q0b">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="8" y="41" width="350" height="21"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="3OC-Rp-q0b"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="3OC-Rp-q0b"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5HZ-HY-sID" id="uXe-CQ-Xaf"/>
+                            <outlet property="delegate" destination="5HZ-HY-sID" id="MAz-xb-nfg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cane Quota" id="FOX-oW-vhf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weH-6F-Brg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285.5" y="-108"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c4q-8G-Lfy">
+            <objects>
+                <navigationController storyboardIdentifier="InitialController" id="sHB-Mh-BXk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8MC-VJ-jZv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5HZ-HY-sID" kind="relationship" relationship="rootViewController" id="3Cs-Wr-KQ1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vp1-3W-Yj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="-106"/>
+        </scene>
+    </scenes>
+</document>
